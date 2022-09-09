@@ -1,0 +1,127 @@
+.bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+
+    @media (max-width: 500px) {
+        background-image: url("/images/bg/bannermobile.png");
+    }
+
+    @media (min-width: 500px) {
+        background-image: url("/images/Banner RR Desktop.png");
+    }
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.conteudo {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-direction: column;
+    
+    @media (min-width: 600px) {
+        max-width: 1366px;
+        padding: 24px;
+    }
+
+    @media (max-width: 600px) {
+        width: 80%
+    }
+}
+
+.first{
+    margin-top: 50px;
+}
+.conteudo p {
+    
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #4E4E4E;
+    text-align: justify;
+    
+}
+
+.linha {
+    background-color: #5B5B5B;
+    width: 80px;
+    height: 6px;
+    margin-top: 1rem;
+    
+    @media (max-width: 500px) {
+        margin: 3rem 0 0 0;
+    }
+}
+.h1Mobile {
+
+    @media (min-width: 500px){
+        display: none;
+        color: #5B5B5B;
+    }
+    @media (max-width: 500px) {
+        display: flex;
+        text-align: center;
+        font-size: 35px;
+        color: #5B5B5B;
+        font-weight: 700;
+        justify-content: center;
+        line-height: 100%;
+        margin: 1rem;
+    }    
+
+}
+
+.h1Desk {
+    @media (min-width: 500px){
+        font-size: 45px;
+        color: #5B5B5B;
+    }
+    @media (max-width: 500px){
+        display: none;
+    }
+    
+}
+
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    h1 {
+        color: #6A6A6A;
+
+        font-weight: 900;
+    }
+
+    .colortext {
+        font-weight: 400;
+        color: black;
+    }
+
+    @media (max-width: 500px) {
+        font-size: .5rem;
+    }
+
+    @media (min-width: 500px) {
+        font-size: .7rem;
+    }
+
+}

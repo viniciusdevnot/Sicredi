@@ -1,0 +1,157 @@
+.container {
+  background-color: black;
+  width: 100%;
+  padding-bottom: 40px;
+
+  @media (min-width: 500px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.titlevideo {
+  @media (max-width: 500px) {
+    .linha {
+      margin-bottom: 10px;
+    }
+
+    justify-content: flex-start;
+    padding-left: 20px;
+
+    .h1Mobile {
+      margin-left: 15px;
+      margin-top: 30px;
+      color: #ececec;
+      font-size: 24px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .linha {
+      background-color: #ececec;
+      width: 65px;
+      height: 5px;
+    }
+
+    .h1Desk {
+      display: none;
+    }
+  }
+
+  @media (min-width: 500px) {
+    flex-direction: row;
+    justify-content: center;
+
+    .linha {
+      background-color: #ececec;
+      width: 65px;
+      height: 5px;
+    }
+
+    .h1Desk {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 40px;
+      color: #ececec;
+      font-size: 30px;
+    }
+
+    .h1Mobile {
+      display: none;
+    }
+  }
+
+  background-color: black;
+  display: flex;
+}
+
+.imgtop1 {
+  display: flex;
+  background-color: black;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.lista {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+
+  @media (max-width: 600px) {
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+.iframes {
+  @media (max-width: 800px) {
+    width: 400px;
+    height: 250px;
+  }
+
+  @media (min-width: 600px) {
+    width: 700px;
+    height: 400px;
+    margin-top: 20px;
+  }
+
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: black;
+  border-radius: 10px;
+  transition: all 0.3s ease-out;
+  width: 30%;
+  max-width: 100%;
+  height: 350px;
+  margin-right: 20px;
+}
+
+.iframes:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.botao {
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 60.15px;
+  width: 400px;
+  max-width: 80%;
+  height: 40px;
+  background-color: rgb(163, 45, 45);
+  border: transparent;
+
+  .icon {
+    font-size: 1.4em;
+    margin: 0 0.5rem 0 0; 
+    
+}
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+  a:hover {
+    color: rgb(255, 255, 255);
+  }
+}
